@@ -40,10 +40,10 @@ if (!dev) {
   });
 
   // Auto wake up heroku
-  app.get('/apis/wakeup-heroku', (req, res) => res.send('ok'));
+  app.get('/wakeup-heroku', (req, res) => res.send('ok'));
   const timer = 25 * 60 * 1000; // 25 minutes
   setInterval(() => {
-    https.get('https://dynonary.herokuapp.com/apis/wakeup-heroku');
+    https.get('https://english-apis.herokuapp.com/wakeup-heroku');
   }, timer);
 } else {
   app.use(morgan('dev'));
