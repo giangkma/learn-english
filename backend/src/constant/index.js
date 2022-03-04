@@ -9,7 +9,7 @@ exports.COOKIE_EXPIRES_TIME = 7 * 24 * 3600 * 1000; // 7 days (by sec)
 exports.JWT_EXPIRES_TIME = 7 * 24 * 3600 * 1000; // 7 days (by sec)
 
 exports.KEYS = {
-  JWT_TOKEN: '__session',
+  JWT_TOKEN: 'token',
 };
 
 exports.MAX = {
