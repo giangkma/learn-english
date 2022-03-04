@@ -37,14 +37,10 @@ function Navigation() {
           {/* Logo */}
           {(isXsDevice || !showInput) && (
             <Link to="/">
-              {/* <img
-                className={`${classes.imgSize} ${classes.logo}`}
-                src={logoUrl}
-                alt="Logo"
-              /> */}
               <p
-                style={{ fontSize: '25px', color: '#fff', fontWeight: 'bold' }}>
-                Home
+                className={`${classes.textHome}`}
+                style={{ fontSize: '25px', fontWeight: 'bold' }}>
+                English 247
               </p>
             </Link>
           )}

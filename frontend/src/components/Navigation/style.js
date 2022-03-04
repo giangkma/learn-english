@@ -58,4 +58,8 @@ export default makeStyles((theme) => ({
   loginLabel: {
     fontSize: '1.4rem',
   },
+
+  textHome: {
+    color: 'var(--label-color)',
+  },
 }));

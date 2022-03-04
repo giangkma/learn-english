@@ -5,7 +5,7 @@ const axiosClient = axios.create({
   baseURL:
     process.env.NODE_ENV === 'development'
       ? process.env.REACT_APP_API_LOCAL_BASE_URL
-      : process.env.REACT_APP_API_BASE_URL,
+      : 'https://english-apis.herokuapp.com/',
   headers: {
     'content-type': 'application/json',
   },
