@@ -91,7 +91,7 @@ const FEATURE_LIST = [
 ];
 
 function HomePage() {
-  useTitle('Dynonary - Ứng dụng học tiếng Anh miễn phí');
+  useTitle('Ứng dụng học tiếng Anh miễn phí');
   useScrollTop();
 
   return (

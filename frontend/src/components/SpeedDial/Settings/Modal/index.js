@@ -39,13 +39,13 @@ function SettingModal({ open, onClose }) {
           <VoiceSetting />
         </div>
 
-        {/* <div className={classes.contentItem}>
+        <div className={classes.contentItem}>
           <h2 className={classes.contentLabel}>Cài đặt khác</h2>
           <div>
             <h3 className="dyno-label my-5">Hiện/Ẩn thanh điều hướng</h3>
             <ToggleNavButton />
           </div>
-        </div> */}
+        </div>
       </DialogContent>
 
       <DialogActions className={classes.actions}>

@@ -322,7 +322,7 @@ exports.getVerifyCode = async (req, res) => {
 
     const mail = {
       to: email,
-      subject: 'Dynonary - Mã xác nhận đổi mật khẩu',
+      subject: 'Mã xác nhận đổi mật khẩu',
       html: mailConfig.htmlResetPassword(verifyCode),
     };
 
