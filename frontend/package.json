@@ -2,6 +2,7 @@
 	"name": "learn-english",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://english-247.herokuapp.com",
 	"dependencies": {
 		"@hookform/resolvers": "^2.5.2",
 		"@material-ui/core": "^4.11.4",
@@ -11,8 +12,8 @@
 		"axios": "^0.21.1",
 		"compressorjs": "^1.0.7",
 		"query-string": "^7.0.0",
-		"react": "16.0.0",
-		"react-dom": "16.0.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
 		"react-facebook-login": "^4.1.1",
 		"react-google-login": "^5.2.2",
 		"react-hook-form": "^7.8.4",
@@ -26,7 +27,8 @@
 		"start": "react-scripts start",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"deploy": "react-scripts build && firebase deploy"
+		"deploy": "react-scripts build && firebase deploy",
+		"build": "react-scripts build"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -48,5 +50,9 @@
 	},
 	"devDependencies": {
 		"sass": "^1.34.1"
+	},
+	"engines": {
+		"node": "14.17.3",
+		"npm": "6.14.13"
 	}
 }

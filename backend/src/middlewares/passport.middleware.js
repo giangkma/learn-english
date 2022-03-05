@@ -10,12 +10,34 @@ const FacebookTokenStrategy = require('passport-facebook-token');
 exports.jwtAuthentication = async (req, res, next) => {
   try {
     res.locals.isAuth = false;
-    let token = req.cookies ? req.cookies[KEYS.JWT_TOKEN] : null;
+
+    const isTokenEmpty =
+      (!req.headers.authorization ||
+        !req.headers.authorization.startsWith('Bearer ')) &&
+      !(req.cookies && req.cookies.__session);
+
+    if (isTokenEmpty) {
+      return next();
+    }
+
+    let token = null;
+
+    if (
+      req.headers.authorization &&
+      req.headers.authorization.startsWith('Bearer ')
+    ) {
+      // Read the ID Token from the Authorization header.
+      token = req.headers.authorization.split('Bearer ')[1];
+    } else if (req.cookies) {
+      // Read the ID Token from cookie.
+      token = req.cookies.__session;
+    } else {
+      return next();
+    }
 
     // if not exist cookie[access_token] -> isAuth = false -> next
     if (!token) {
-      next();
-      return;
+      return next();
     }
 
     // verify jwt

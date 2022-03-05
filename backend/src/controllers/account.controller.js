@@ -91,16 +91,10 @@ exports.postLogin = async (req, res) => {
       process.env.JWT_SECRET_KEY || 'dynonary-serect',
       { accountId: account._id },
     );
-    res.cookie(KEYS.JWT_TOKEN, token, {
-      httpOnly: true,
-      expires: new Date(Date.now() + COOKIE_EXPIRES_TIME),
-    });
 
     return res.status(200).json({
       message: 'success',
-      key: KEYS.JWT_TOKEN,
       token,
-      expires: new Date(Date.now() + COOKIE_EXPIRES_TIME),
     });
   } catch (error) {
     console.error('POST REGISTER ACCOUNT ERROR: ', error);
@@ -138,30 +132,13 @@ exports.postLoginSocialNetwork = async (req, res) => {
       { accountId },
     );
 
-    res.cookie(KEYS.JWT_TOKEN, token, {
-      httpOnly: true,
-      expires: new Date(Date.now() + COOKIE_EXPIRES_TIME),
-    });
-
     return res.status(200).json({
       message: 'success',
-      key: KEYS.JWT_TOKEN,
       token,
-      expires: new Date(Date.now() + COOKIE_EXPIRES_TIME),
     });
   } catch (error) {
     console.error('LOGIN WITH GG ERROR: ', error);
     return res.status(500).json({ message: 'Lỗi dịch vụ, thử lại sau' });
-  }
-};
-
-exports.postLogout = async (req, res) => {
-  try {
-    res.clearCookie(KEYS.JWT_TOKEN);
-    return res.status(200).json({ message: 'success' });
-  } catch (error) {
-    console.error('POST LOG OUT ERROR: ', error);
-    return res.status(503).json({ message: 'Lỗi dịch vụ, thử lại sau' });
   }
 };
 
@@ -225,8 +202,6 @@ exports.putToggleFavorite = async (req, res) => {
     } else {
       return res.status(409).json({ message: 'failed' });
     }
-
-    console.log(updateStatus);
   } catch (error) {
     console.error('PUT TOGGLE FAVORITE ERROR: ', error);
     return res.status(503).json({ message: 'Lỗi dịch vụ, thử lại sau' });

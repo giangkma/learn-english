@@ -34,7 +34,7 @@ const FEATURE_LIST = [
   {
     title: 'Từ vựng với Flashcard',
     subTitle:
-      'Flashcard phương pháp học từ vựng nổi tiếng. Nay hoàn toàn miễn phí trên Dynonary',
+      'Flashcard phương pháp học từ vựng nổi tiếng. Nay hoàn toàn miễn phí trên English 247',
     imgUrl: flashcardIcon,
     to: ROUTES.FLASHCARD,
   },

@@ -1,7 +1,7 @@
 {
-  "name": "dynonary-apis",
+  "name": "english247-apis",
   "version": "1.0.0",
-  "description": "Dynonary - Free web app to learn english",
+  "description": "English247 - Free web app to learn english",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

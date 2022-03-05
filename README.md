@@ -1,5 +1,5 @@
 <h1 align="center">
-Ứng dụng học tiếng Anh miễn phí cho người Việt
+English 247 Ứng dụng học tiếng Anh miễn phí cho người Việt
 </h1>
 
 <!-- TABLE OF CONTENTS -->
@@ -37,7 +37,7 @@
 -   Học bảng IPA (International Phonetic Alphabet).
 -   Bảng 1000+ câu giao tiếp thông dụng.
 -   Từ vựng Flashcard (Slide show & Gallery).
--   Từ điển Dynonary (Tìm kiếm, lọc thêm chủ đề, cấp độ, loại từ, sắp xếp...).
+-   Từ điển English 247 (Tìm kiếm, lọc thêm chủ đề, cấp độ, loại từ, sắp xếp...).
 -   Lưu danh sách yêu thích người dùng.
 -   Bảng động từ bất quy tắc.
 -   Nhúng Blog file html vào phần grammar.

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setMessage } from 'redux/slices/message.slice';
 import Login from './index';
+import { tokenStorage } from 'configs/token';
 
 function LoginData() {
   const [loading, setLoading] = useState(false);
@@ -16,6 +17,8 @@ function LoginData() {
 
       const apiRes = await accountApi.postLogin(email.toLowerCase(), password);
       if (apiRes && apiRes.status === 200) {
+        const { data } = apiRes;
+        tokenStorage.set(data.token);
         dispatch(
           setMessage({ message: 'Đăng nhập thành công', type: 'success' }),
         );

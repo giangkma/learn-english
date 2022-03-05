@@ -19,10 +19,6 @@ const accountApi = {
     return axiosClient.post(`${URL}/login-fb`, { access_token });
   },
 
-  postLogout: () => {
-    return axiosClient.post(`${URL}/logout`);
-  },
-
   postResetPassword: (email, password, verifyCode) => {
     return axiosClient.post(`${URL}/reset-password`, {
       email,

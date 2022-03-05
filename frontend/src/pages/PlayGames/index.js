@@ -46,7 +46,7 @@ const GAME_LIST = [
   /*  {
     title: 'Ai là triệu phú',
     subTitle:
-      'Trải nghiệm game show truyền hình "Ai là triệu phú" phiên bản tiếng Anh ngay với Dynonary',
+      'Trải nghiệm game show truyền hình "Ai là triệu phú" phiên bản tiếng Anh ngay với English 247',
     imgUrl: millionaireIcon,
     to: GAMES.MILLIONAIRE,
   },

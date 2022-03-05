@@ -24,9 +24,9 @@ const NAV_SEARCH_DATA = [
     to: ROUTES.FLASHCARD,
   },
   {
-    title: 'từ điển Dynonary',
+    title: 'từ điển English 247',
     searchKey:
-      'danh sách từ phân loại cấp độ vocabulary dictionary level type list dynonary',
+      'danh sách từ phân loại cấp độ vocabulary dictionary level type list English 247',
     to: ROUTES.DYNO_DICTIONARY,
   },
   {
